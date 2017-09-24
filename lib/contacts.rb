@@ -29,9 +29,10 @@ require 'pry'
 
 def remove_strawberry(contacts)
    contacts.each do |person, contact_details_hash|
-     
-     binding.pry
+     contact_details_hash.each do |attribute, data|
+       binding.pry
   
   end
-
 end
+
+# why not ["Freddy Mercury"][:favorite_ice_cream_flavors]. bcause you wouldn't necessarily know where strawberry was in the hash?
