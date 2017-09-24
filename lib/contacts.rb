@@ -13,7 +13,6 @@ require 'pry'
   #     favorite_ice_cream_flavors: ["strawberry", "cookie dough", "mint chip"]
   #   }
   # }
-
   contacts = {
   "Jon Snow" => {
     name: "Jon",
@@ -31,7 +30,7 @@ def remove_strawberry(contacts)
    contacts.each do |person, contact_details_hash|
      contact_details_hash.each do |attribute, data|
        if attribute == :favorite_ice_cream_flavors
-         data.delete_if {|flavor| flavor == "cookie dough"}
+         data.delete_if {|flavor| flavor == "strawberry"}
        end
      end
   end
